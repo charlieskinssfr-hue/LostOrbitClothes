@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lost Orbit</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header><a class="logo" href="#">LOST ORBIT</a><nav><a href="#shop">Shop</a><button id="openCart">Cart <b id="cartCount">0</b></button></nav></header><section class="hero"><div><small>LOST ORBIT / NEW COLLECTION</small><h1>LOST<br><span>ORBIT</span></h1><p>Find your own direction.</p><a class="btn" href="#shop">SHOP COLLECTION</a></div><i class="ring"></i></section><section id="shop"><div class="heading"><div><small>THE COLLECTION</small><h2>Lost Orbit essentials</h2></div><p>Choose a colour and size.</p></div><div id="products" class="products"></div></section><section class="about"><div><small>ABOUT LOST ORBIT</small><h2>Made for the ones<br>off the map.</h2></div><p>Lost Orbit is an independent clothing label built around individuality, late nights and finding your own direction.</p></section><footer>© 2026 LOST ORBIT</footer>
+<div class="orbit-watermark" aria-hidden="true">LOST<br>ORBIT</div>
+<div id="checkoutModal" class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <div class="checkout-panel">
+    <button id="closeCheckout" class="modal-close" type="button" aria-label="Close checkout">×</button>
+    <small>LOST ORBIT / CHECKOUT</small>
+    <h2 id="checkoutTitle">Your details</h2>
+    <p class="checkout-intro">Enter your contact details. Secure payment and shipping-address collection will happen on Stripe Checkout.</p>
+    <form id="checkoutForm">
+      <label for="customerName">Full name</label>
+      <input id="customerName" name="name" autocomplete="name" required maxlength="120">
+      <label for="customerEmail">Email address</label>
+      <input id="customerEmail" name="email" type="email" autocomplete="email" required maxlength="254">
+      <p class="secure-note"> <span>🔒</span> Card details are entered on Stripe's secure payment page — they are never stored by this website.</p>
+      <button class="btn full" type="submit">CONTINUE TO SECURE PAYMENT</button>
+      <p id="checkoutMessage" class="checkout-message" role="status"></p>
+    </form>
+  </div>
+</div>
+<div id="shade"></div><aside id="cart"><div class="carthead"><h2>Your cart</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cartfoot"><div class="total"><span>Total</span><b id="total">$0.00 AUD</b></div><button class="btn full" id="checkout">CHECKOUT</button><small>Real payment checkout still needs to be connected.</small></div></aside><script src="script.js"></script></body></html>
